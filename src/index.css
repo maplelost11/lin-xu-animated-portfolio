@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face{font-family:"Inter:Regular";src:url("https://static.figma.com/font/Inter_1") format("woff2");font-style:normal;font-weight:400}
+@font-face{font-family:"Newsreader:Medium";src:url("https://static.figma.com/font/Newsreader_opsz_wght__1") format("woff2");font-style:normal;font-weight:500}
+@font-face{font-family:"Newsreader:SemiBold";src:url("https://static.figma.com/font/Newsreader_opsz_wght__1") format("woff2");font-style:normal;font-weight:600}
+@font-face{font-family:"Noto Sans JP:Bold";src:url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");font-style:normal;font-weight:700}
+@font-face{font-family:"Noto Sans JP:Medium";src:url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");font-style:normal;font-weight:500}
+@font-face{font-family:"Noto Sans JP:Regular";src:url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");font-style:normal;font-weight:400}
+@font-face{font-family:"Noto Sans SC:Bold";src:url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");font-style:normal;font-weight:700}
+@font-face{font-family:"Noto Sans SC:Medium";src:url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");font-style:normal;font-weight:500}
+@font-face{font-family:"Noto Sans SC:Regular";src:url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");font-style:normal;font-weight:400}
+@font-face{font-family:"Plus Jakarta Sans:Bold";src:url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");font-style:normal;font-weight:700}
+@font-face{font-family:"Plus Jakarta Sans:Medium";src:url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");font-style:normal;font-weight:500}
+@font-face{font-family:"Plus Jakarta Sans:Regular";src:url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");font-style:normal;font-weight:400}
+@font-face{font-family:"Plus Jakarta Sans:SemiBold";src:url("https://static.figma.com/font/PlusJakartaSans_wght__2") format("woff2");font-style:normal;font-weight:600}
+
+:root{color:#1c1c15;background:#fcf9ed;font-family:"Noto Sans SC:Regular",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-width:320px;min-height:100dvh}
+button,a,[data-name="Link"]{cursor:pointer}
+[data-node-id="1:8"],[data-node-id="1:404"],[data-node-id="1:462"]{margin-inline:auto}
+.hero-tech-title{color:#1c1c15;height:180px;margin-block:-18px -12px;position:relative;width:100%}
+
+@media(max-width:900px){
+  [data-node-id="1:8"],[data-node-id="1:404"],[data-node-id="1:462"]{padding-inline:32px}
+  [data-node-id="1:472"]{display:none}
+  [data-node-id="1:19"],[data-node-id="1:27"]{width:100%}
+  [data-node-id="1:29"],[data-node-id="1:344"]{display:flex;flex-direction:column;gap:40px}
+  [data-node-id="1:30"],[data-node-id="1:77"],[data-node-id="1:345"],[data-node-id="1:370"]{width:100%}
+  [data-node-id="1:157"]{grid-template-columns:1fr;grid-template-rows:none}
+  [data-node-id="1:157"]>*{grid-column:1;grid-row:auto}
+  [data-node-id="1:226"]{padding:40px}
+  [data-node-id="1:235"]{flex-wrap:wrap}
+  [data-node-id="1:235"]>*{flex-basis:calc(50% - 12px)}
+  [data-node-id="1:380"]{align-items:flex-start;flex-direction:column;gap:32px;padding:48px}
+  [data-node-id="1:405"]{display:flex;flex-direction:column;gap:48px}
+  [data-node-id="1:406"],[data-node-id="1:422"]{width:100%}
+}
+
+@media(max-width:640px){
+  [data-node-id="1:3"]{gap:48px;overflow:hidden}
+  [data-node-id="1:8"],[data-node-id="1:404"],[data-node-id="1:462"]{padding-inline:20px}
+  [data-node-id="1:8"]{gap:64px;padding-bottom:64px}
+  [data-node-id="1:3"] .whitespace-nowrap{white-space:normal}
+  [data-node-id="1:26"],[data-node-id="1:154"],[data-node-id="1:232"],[data-node-id="1:350"],[data-node-id="1:388"]{font-size:32px;letter-spacing:-.5px}
+  [data-node-id="1:26"] p,[data-node-id="1:154"] p,[data-node-id="1:232"] p,[data-node-id="1:350"] p,[data-node-id="1:388"] p,[data-node-id="1:388"] span{line-height:1.3}
+  [data-node-id="1:28"]{font-size:16px}
+  .hero-tech-title{height:116px;margin-block:-8px -4px}
+  [data-node-id="1:149"],[data-node-id="1:227"]{align-items:flex-start;flex-direction:column;gap:16px}
+  [data-node-id="1:158"],[data-node-id="1:175"],[data-node-id="1:192"],[data-node-id="1:209"]{padding:28px}
+  [data-node-id="1:226"]{gap:40px;padding:28px 20px}
+  [data-node-id="1:235"]{flex-direction:column}
+  [data-node-id="1:235"]>*{flex-basis:auto;width:100%}
+  [data-node-id="1:353"],[data-node-id="1:370"],[data-node-id="1:391"],[data-node-id="1:447"]{flex-direction:column}
+  [data-node-id="1:370"]{height:auto}
+  [data-node-id="1:370"]>*{flex:none;width:100%}
+  [data-node-id="1:375"]{height:auto;padding-top:0}
+  [data-node-id="1:380"]{padding:36px 24px}
+  [data-node-id="1:391"]{align-items:stretch;width:100%}
+  [data-node-id="1:392"],[data-node-id="1:398"]{width:100%}
+  [data-node-id="1:404"]{gap:48px;padding-block:64px}
+  [data-node-id="1:405"]{gap:56px}
+  [data-node-id="1:422"]{height:auto}
+  [data-node-id="1:447"]{align-items:flex-start;gap:24px}
+  [data-node-id="1:450"]{align-items:flex-start;flex-wrap:wrap;gap:12px}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
